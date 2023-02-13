@@ -1,0 +1,19 @@
+CREATE TABLE Walmart_Store (id INTEGER PRIMARY KEY, name TEXT, ailse INTEGER, sizes INTEGER, price INTEGER, On_Sale TEXT);
+
+INSERT INTO Walmart_Store VALUES (1, "Bikes", 42, "0-18", 299.99, "No");
+INSERT INTO Walmart_Store VALUES (2, "eggs", 12, 12, 28.99, "no");
+INSERT INTO Walmart_Store VALUES (3, "Shirts", 2, "0-38", 14.99, "Yes");
+INSERT INTO Walmart_Store VALUES (4, "Pants", 3, "1-44", 25.99, "Yes");
+INSERT INTO Walmart_Store VALUES (5, "Shoes", 4, "7-16", 99.99, "No");
+INSERT INTO Walmart_Store VALUES (6, "Socks", 4, "N/a", 4.99, "No");
+INSERT INTO Walmart_Store VALUES (7, "Steak", 18, "n/a", 12.99, "no");
+INSERT INTO Walmart_Store VALUES (8, "Chicken", 18, "n/a", 2.99, "no");
+INSERT INTO Walmart_Store VALUES (9, "Bison", 18, "n/a", 7.99, "no");
+INSERT INTO Walmart_Store VALUES (10, "Cookies", 11, "n/a", 5.99, "no");
+INSERT INTO Walmart_Store VALUES (11, "Chips", 11, "n/a", 6.99, "no");
+INSERT INTO Walmart_Store VALUES (12, "Butter", 20, "n/a", 2.99, "no");
+INSERT INTO Walmart_Store VALUES (13, "Spices", 11, "n/a", 1.99, "yes");
+INSERT INTO Walmart_Store VALUES (14, "Pam", 11, "n/a", 4.99, "no");
+INSERT INTO Walmart_Store VALUES (15, "Basketball", 42, "n/a", 12.99, "no");
+SELECT * FROM Walmart_Store ORDER BY price asc;
+SELECT * FROM Walmart_Store ORDER BY price AND On_Sale="Yes";
